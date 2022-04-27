@@ -1,0 +1,38 @@
+@hostname = localhost
+@port = 5000
+@host = {{hostname}}:{{port}}
+@server = http://{{host}}
+@api = {{server}}/user
+# api = http://localhost:5000/user
+@contentType = Content-Type: application/json
+
+GET {{api}}
+
+###
+
+GET {{api}}/userpk1
+
+###
+
+POST {{api}}
+{{contentType}}
+
+{
+  "name": "username 3",
+  "email": "user_3@email.tld"
+}
+
+###
+
+PUT {{api}}/userpk1
+{{contentType}}
+
+{
+  "name": "updated username 3",
+  "email": "updated_user_3@email.tld",
+  "pk": "userpk1"
+}
+
+###
+
+DELETE {{api}}/userpk2

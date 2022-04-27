@@ -1,0 +1,20 @@
+{% extends "default.html" %}
+
+{% block title %}Flask App{% endblock %}
+{% block description %}An introduction to building web apps{% endblock %}
+
+{% block content %}
+
+<h1 class="title">Welcome To Flask App</h1>
+<p class="subtitle">We're just getting started...</p>
+
+<div class="content">
+    <label for="username">User Name</label>
+    <input type="text" id="username">
+</div>
+
+<div class="buttons">
+    <button onclick="getUsername()">Get User Name</button>
+</div>
+
+{% endblock %}

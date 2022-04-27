@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+tr {
+    cursor: pointer;
+}
+
+tr:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.inputs, .buttons {
+    display: flex;
+    width: 100%;
+}
+
+.input {
+    margin-right: 1rem;
+}
